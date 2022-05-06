@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t anupk/nodeapp:latest .'
+				sh 'docker build -t anup10/nodeapp:latest .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push anupk/nodeapp:latest'
+				sh 'docker push anup10/nodeapp:latest'
 			}
 		}
 	}
