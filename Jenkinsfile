@@ -31,6 +31,8 @@ pipeline{
 
         stage('Deploy'){
             steps{
+                sh 'docker rm --force nodeapp'
+                sh 'docker rmi anup10/nodeapp:latest'
                 sh 'docker run -d -p 3000:3000 anup10/nodeapp:latest'
             }
         }
