@@ -18,7 +18,7 @@ const port=3000;
 
 app.get("/", (req, res) => {
 
-res.json({message:'Root page'})
+res.json({message:'Hello Anup'})
 
 })
 
