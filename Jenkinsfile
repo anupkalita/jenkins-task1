@@ -28,6 +28,12 @@ pipeline{
 				sh 'docker push anup10/nodeapp:latest'
 			}
 		}
+
+        stage('Deploy'){
+            steps{
+                sh 'docker run -d -p 3000:3000 anup10/nodeapp:latest'
+            }
+        }
 	}
 
 	post {
