@@ -1,12 +1,23 @@
 {
   "name": "jenkins-task1",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anupkalita/jenkins-task1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anupkalita/jenkins-task1/issues"
+  },
+  "homepage": "https://github.com/anupkalita/jenkins-task1#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
