@@ -18,7 +18,7 @@ const port=3000;
 
 app.get("/", (req, res) => {
 
-res.end("<h1>Hello Anup</h1>")
+res.json({name:"John", age:30})
 
 })
 
